@@ -1,0 +1,17 @@
+<div class="auth">
+  <h2 mat-dialog-title>Вход</h2>
+  <form class="auth__form" [formGroup]="form">
+    <mat-form-field class="auth__form-field" appearance="outline">
+      <mat-label>Ваш email</mat-label>
+      <input type="email" formControlName="email" matInput />
+    </mat-form-field>
+    <mat-form-field class="auth__form-field" appearance="outline">
+      <mat-label>Пароль</mat-label>
+      <input type="password" formControlName="password" matInput />
+    </mat-form-field>
+    <div class="auth__form-actions">
+      <button class="auth__form-button" color="primary" mat-raised-button type="submit">Далее</button>
+      <button class="auth__form-button" color="warn" mat-raised-button mat-dialog-close>Отмена</button>
+    </div>
+  </form>
+</div>
